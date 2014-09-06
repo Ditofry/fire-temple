@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FireTemple</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/fire-temple.css">
+  </head>
+  <body>
+    <script>
+      window.FireTempleENV = {{ENV}};
+      window.EmberENV = window.FireTempleENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/fire-temple.js"></script>
+    <script>
+      window.FireTemple = require('fire-temple/app')['default'].create(FireTempleENV.APP);
+    </script>
+  </body>
+</html>
