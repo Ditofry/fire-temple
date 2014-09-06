@@ -1,0 +1,10 @@
+<h3>Create a new widget</h3>
+<label>Name</label>
+{{input value=widget.name placeholder="Name"}}
+<button {{action "createWidget"}}>Create</button>
+
+<h3>Widgets</h3> 
+{{#each widget in arrangedContent}}
+  <div>{{widget.name}}</div>
+{{/each}}
+
